@@ -1,5 +1,6 @@
 import React from "react";
 
+// Seu próprio componente
 export function Button({ children, className, variant = "default", ...props }) {
   const baseStyle = "inline-flex items-center px-4 py-2 rounded-md font-semibold text-sm transition";
   const variants = {

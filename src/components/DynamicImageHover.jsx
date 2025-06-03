@@ -28,7 +28,7 @@ export default function DynamicImageHover() {
           onMouseLeave={() => setHovered(false)}
         >
           <img
-            src="/images/about.jpeg"
+            src="/images/K3L_INFO.png"
             alt="Destaque"
             style={{
               height: "100%",
