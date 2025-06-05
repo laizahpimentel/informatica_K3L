@@ -53,23 +53,36 @@ export default function HomePage() {
           </a>
     </div>
 
+        {/* Logo escrita no topo, centralizada */}
+    <div className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50">
+      <img
+        src="/images/LOGO COM ESCRITA SEM FUNDO.png"
+        alt="Logo Escrita TechGamer"
+        className="w-60 h-auto"
+      />
+    </div>
+
     {/* Logo canto inferior esquerdo */}
-        <div className="fixed bottom-0 left-6 w-24 h-24 z-50">
+        <div className="fixed bottom-3 left-2 w-24 h-24 z-50">
           <img
-            src="/images/LOGO COM ESCRITA SEM FUNDO.png"
+            src="/images/LOGO SEM FUNDO.png"
             alt="Logo TechGamer"
             className="block w-full h-full object-contain"
            />
         </div>
 
-        {/* Logo no canto superior direito */}
-        <div className="w-24 h-24 rounded-full border-4 border-indigo-500 overflow-hidden bg-white">
-          <img
-            src="/images/LOGO.png"
-            alt="Logo TechGamer"
-            className="block w-full h-full object-cover"
-          />
+    {/* Logo no canto superior direito com borda em degradê e ícone menor */}
+        <div className="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-pink-500 via-purple-500 to-red-500">
+          <div className="w-full h-full rounded-full bg-[#202020] flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/LOGO SEM FUNDO.png"
+              alt="Logo TechGamer"
+              className="w-16 h-16 object-contain"
+            />
+          </div>
         </div>
+
+
       </header>
 
       {/* Conteúdo principal */}
