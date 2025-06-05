@@ -27,22 +27,18 @@ export default function HomePage() {
 
   return (
 <div
-
   className="min-h-screen text-white"
   style={{
-    backgroundImage: `
-        url('/images/LOGO COM ESCRITA SEM FUNDO.png'),
-      linear-gradient(to bottom right, #1f1e1f, #2c2b2c, #3a393a)
-    `,
-    backgroundSize: "6%, cover",
-    backgroundPosition: "bottom 50px left 100px, center",
+    backgroundImage: `linear-gradient(to bottom right, #1f1e1f, #2c2b2c, #3a393a)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundRepeat: "no-repeat, no-repeat",
   }}
 >
       <header className="flex justify-between items-center py-8 px-4">
         <div className="flex-1 text-center">
-          <h1 className="text-4xl font-bold"> Informática K3L</h1>
-          <p className="text-lg">Montagem e Reparo de Computadores</p>
+          {/* <h1 className="text-4xl font-bold">Informática K3L</h1> */}
+          {/* <p className="text-lg">Montagem e Reparo de Computadores</p> */}
          </div>
 
 
@@ -56,6 +52,15 @@ export default function HomePage() {
             </Button>
           </a>
     </div>
+
+    {/* Logo canto inferior esquerdo */}
+        <div className="fixed bottom-0 left-6 w-24 h-24 z-50">
+          <img
+            src="/images/LOGO COM ESCRITA SEM FUNDO.png"
+            alt="Logo TechGamer"
+            className="block w-full h-full object-contain"
+           />
+        </div>
 
         {/* Logo no canto superior direito */}
         <div className="w-24 h-24 rounded-full border-4 border-indigo-500 overflow-hidden bg-white">
