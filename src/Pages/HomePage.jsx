@@ -22,9 +22,6 @@ const portfolioItems = [
   // Adicione mais itens conforme necessário
 ];
 
-// const Button = () => {
-//   return <button>Botão simples</button>;
-// };
 
 export default function HomePage() {
 
@@ -34,7 +31,7 @@ export default function HomePage() {
   className="min-h-screen text-white"
   style={{
     backgroundImage: `
-      url('/images/LOGO COM ESCRITA SEM FUNDO.png'),
+        url('/images/LOGO COM ESCRITA SEM FUNDO.png'),
       linear-gradient(to bottom right, #1f1e1f, #2c2b2c, #3a393a)
     `,
     backgroundSize: "6%, cover",
@@ -51,10 +48,13 @@ export default function HomePage() {
 
         {/* Botao das pages */}
       <div>
-        <Button variant="plain">Clique aqui</Button>
-        <Button variant="plain">Clique aqui</Button>
-        <Button variant="plain">Clique aqui</Button>
-        <Button variant="plain">Clique aqui</Button>
+           <a href="/sobre" target="_blank" rel="noreferrer">
+            <Button
+              variant="outline"
+              className="text-white hover:text-gray-400 border-white hover:border-gray-400"
+          >  Sobre Nós
+            </Button>
+          </a>
     </div>
 
         {/* Logo no canto superior direito */}
@@ -114,7 +114,7 @@ export default function HomePage() {
               variant="outline"
               className="text-white hover:text-gray-400 border-white hover:border-gray-400"
             >
-              <Instagram className="mr-2 text-white hover:text-gray-400" />
+               <Instagram className="mr-2 text-white hover:text-gray-400" />
             </Button>
           </a>
           <a href="https://facebook.com/sualoja" target="_blank" rel="noreferrer">
